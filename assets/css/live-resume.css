@@ -3474,7 +3474,7 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem; }
+  padding: 1.05rem; }
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -5060,24 +5060,19 @@ button.bg-white:focus {
 .border-black {
   border-color: #000000 !important; }
 
-.border-solid {
+.border-solid-1 {
     border:1px solid black !important; 
-    box-shadow: 5px 5px black;
+    box-shadow: 1px 1px black;
     color:black;
 }
-.border-solid:hover {
-  box-shadow: 8px 8px black;
+.border-solid {
+  border:1px solid black ; 
+  box-shadow: 5px 5px black;
+  color:black;
 }
-
-.shadow-5{
-  box-shadow: 5px 5px black !important; 
-}
-.shadow-2{
-  box-shadow: 1px 1px black !important; 
-}
-.shadow-10{
-  border:3px solid black !important; 
-  box-shadow: 10px 10px #00f2a9 !important; 
+.border-solid-10{
+  border:3px solid black ; 
+  box-shadow: 10px 10px #00f2a9; 
 }
 
 .border-white {
@@ -7515,8 +7510,7 @@ aside .widget {
     border: 0; }
   .btn-share:focus {
     box-shadow: none; }
-  .btn-share:hover {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2); }
+ 
 
 .btn-img {
   height: 10px;
@@ -7536,8 +7530,7 @@ aside .widget {
     border: 0; }
   .btn-menu-toggle:focus {
     box-shadow: none; }
-  .btn-menu-toggle:hover {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2); }
+ 
 
 .btn-download-cv {
   padding: 6px 30px; }
@@ -7598,7 +7591,6 @@ header {
         margin: 15px 0;
         height: auto; } }
     .collapsible-nav .nav-link.active {
-      color: #00f2a9;
       border-bottom: 2px solid #00f2a9;
       padding-bottom: 0; }
 
@@ -7724,7 +7716,7 @@ main {
         line-height: 1;
         margin-bottom: 2px; }
       main .time-line-item-subtitle {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1.6;
         color: #a7a7a7;

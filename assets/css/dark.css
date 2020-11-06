@@ -1,0 +1,60 @@
+html, html * {
+    color: #eeeeee !important;
+    border-color: #555555 !important;
+    background-color: #292929 !important;
+  }
+  
+  html, body, html::before, body::before {
+    background-image: none !important;
+  }
+  
+  img, video {z-index: 1}
+  cite, cite * {color: #029833 !important}
+  video {background-color: transparent !important}
+  input, textarea {background-color: #333333 !important}
+  input, select, button {background-image: none !important}
+  a {background-color: rgba(255, 255, 255, 0.01) !important}
+  
+  :before {color: #eeeeee !important}
+  :link, :link * {color: #8db2e5 !important}
+  :visited, :visited * {color: rgb(211, 138, 138) !important}
+
+  
+.border-solid-1 {
+  border:1px solid #00f2a9 !important; 
+  box-shadow: 1px 1px#00f2a9 !important;
+  color:black;
+}
+.border-solid {
+border:1px solid#00f2a9 !important; 
+box-shadow: 5px 5px #00f2a9 !important;
+color:black;
+}
+.border-solid-10{
+border:3px solid black !important; 
+box-shadow: 10px 10px #00f2a9 !important; 
+}
+
+
+
+/* 
+  .shadow-2{
+    box-shadow: 1px 1px #00f2a9 !important ; 
+  }
+  
+.border-solid {
+    border:1px solid #00f2a9 !important; 
+    box-shadow: 5px 5px #00f2a9 !important;
+    color:black;
+}
+
+.shadow-5{
+  box-shadow: 5px 5px #00f2a9 !important; 
+}
+
+.border-solid-shadow-10{
+  border:3px solid black ; 
+  box-shadow: 10px 10px #00f2a9 !important; 
+}
+   */
+

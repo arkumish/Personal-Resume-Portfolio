@@ -8,22 +8,23 @@
     <title>Arpit-Resume Potfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
 
+    <link id="dark-theme" rel="stylesheet" type="text/css" href="assets/css/dark.css" disabled=true /> 
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/live-resume.css">
 </head>
 
 <body>
     <header>
-        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto border-solid shadow-2">
-            Dark Mode</button>
+        <button id="theme-switch" onclick="changeTheme()" class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto border-solid-1 ">
+            🌚 Dark Mode</button>
         <nav class="collapsible-nav" id="collapsible-nav">
             <a href="index.html" class="nav-link active">HOME</a>
             <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
-            <a href="resume.html" class="nav-link">ACHIEVEMENTS</a>
+            <a href="achievements.html" class="nav-link">ACHIEVEMENTS</a>
             <a href="blog.html" class="nav-link">BLOG</a>
             <a href="contact.html" class="nav-link">CONTACT</a>
         </nav>
-        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+        <button class="btn btn-menu-toggle btn-white rounded-circle border-solid-1 " data-toggle="collapsible-nav"
             data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
     </header>
     <div class="content-wrapper">
@@ -36,20 +37,20 @@
                 <span class="badge badge-white badge-pill profile-designation border-solid"> Full Stack Web Developer</span>
             </div>
             <nav class="social-links ">
-                <a href="#!" class="social-link border-solid shadow-2"><i class="fab fa-linkedin"></i></a>
-                <a href="#!" class="social-link border-solid shadow-2"><i class="fab fa-twitter"></i></a>
-                <a href="#!" class="social-link border-solid shadow-2"><i class="fab fa-dribbble"></i></a>
-                <a href="#!" class="social-link border-solid shadow-2"><i class="fab fa-github"></i></a>
+                <a href="#!" class="social-link border-solid-1"><i class="fab fa-linkedin"></i></a>
+                <a href="#!" class="social-link border-solid-1"><i class="fab fa-twitter"></i></a>
+                <a href="#!" class="social-link border-solid-1 "><i class="fab fa-dribbble"></i></a>
+                <a href="#!" class="social-link border-solid-1"><i class="fab fa-github"></i></a>
             </nav>
            
             <div class="widget card">
                 <div class="card-body border-solid">
                     <div class="widget-content">
                         <h5 class="widget-title card-title">Personal information</h5>
-                        <p>BIRTHDAY : 24 May 1998</p>
-                    <p>WEBSITE : </p>
-                    <p>MAIL : arpit.cse24@gmail.com</p>
-                    <p>Location : India</p>
+                    <!-- <p>WEBSITE : </p> -->
+                    
+                    <p>📧arpit.cse24@gmail.com</p>
+                    <p>🗺️India</p>
                    
                     </div>
                 </div>
@@ -63,16 +64,17 @@
                 <div class="card-body border-solid">
                     <div class="widget-content">
                         <h5 class="widget-title card-title">INTERESTS</h5>
-                        <p>Coding</p>
-                        <p>Finance</p>
-                        <p>Designing</p>
-                        <p>Sketching</p>
-                        <p>Doodling</p>
+                        
+                        <p>👨‍💻 Coding</p>
+                        <p>💹 Finance</p>
+                        <p>🤔 Designing</p>
+                        <p>✏️ Sketching</p>
+                        <p>📝 Doodling</p>
                     </div>
                 </div>
             </div>
         </aside>
-        <main class="border-solid shadow-10">
+        <main class="border-solid-10">
             <section class="intro-section ">
                 <h2 class="section-title">Howdy, friends!<span class="wave">👋</span> </h2>
                 <p>I'm Arpit, a Full Stack Web developer from India.
@@ -190,6 +192,22 @@
     <script src="assets/vendors/@popperjs/popper-base.min.js"></script>
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/live-resume.js"></script>
+
+    <script>
+        function changeTheme() {
+            var theme = document.getElementById("dark-theme");
+
+            if(theme.disabled){
+                theme.disabled=false;
+                $('#theme-switch').text("☀️ Light Mode");
+            }else{
+                theme.disabled=true;
+                $('#theme-switch').text("🌚 Dark Mode");
+            }
+            
+            
+        }
+    </script>
 </body>
 
 </html>
