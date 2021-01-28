@@ -36,6 +36,15 @@ box-shadow: 10px 10px #00f2a9 !important;
 }
 
 
+.progress-bar{
+  background-color: #00f2a9 !important;
+  color:black !important;
+}
+
+.progress{
+  background-color: white !important;
+}
+
 
 /* 
   .shadow-2{
