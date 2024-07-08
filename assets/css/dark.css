@@ -45,7 +45,11 @@ box-shadow: 10px 10px #00f2a9 !important;
   background-color: white !important;
 }
 
+main .portfolio-wrapper .portfolio-item {
+ 
+  background-color: #00f2a9 !important;
 
+}
 /* 
   .shadow-2{
     box-shadow: 1px 1px #00f2a9 !important ; 
